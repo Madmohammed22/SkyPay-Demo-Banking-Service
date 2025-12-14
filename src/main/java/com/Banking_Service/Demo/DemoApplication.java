@@ -5,22 +5,6 @@ import com.Banking_Service.Demo.Service.Account;
 
 import java.time.LocalDate;
 
-class Solution {
-
-    public int fibMemo(int n, Integer[] arr) {
-        if (arr[n] != null) return arr[n];
-
-        int result;
-        if (n == 0) result = 0;
-        else if (n == 1) result = 1;
-        else result = fibMemo(n - 1, arr) + fibMemo(n - 2, arr);
-
-        arr[n] = result;
-        return result;
-    }
-}
-
-
 public class DemoApplication {
 
     public static void main(String[] args) {
@@ -68,9 +52,5 @@ public class DemoApplication {
             System.out.println("\n=== All examples completed successfully! ===");
         }
 
-        Solution solution = new Solution();
-        int n = 6;
-        Integer[] arr = new Integer[n + 1];
-        System.out.println(solution.fibMemo(n, arr));
     }
 }

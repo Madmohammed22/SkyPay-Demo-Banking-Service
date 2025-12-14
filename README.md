@@ -1,4 +1,3 @@
-#![](Documentation/UML_Documentation.png)
 # Banking Service Demo
 
 A Java-based banking application that demonstrates account management with deposit, withdrawal, and statement generation capabilities.
